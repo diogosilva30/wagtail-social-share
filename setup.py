@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="WAGTAIL-PAGE-SHARER", 
+    name="WAGTAIL-PAGE-SHARER",
     version="0.0.6",
     author="Diogo Silva",
     author_email="diogosilv30@gmail.com",
