@@ -61,7 +61,7 @@ class BlogPostPage(SocialMediaSharablePageMixin, Page):
 
 WAGTAIL_SOCIAL_SHARE={
     # The social medias that the pages should be shared on
-    "SHARE_ON":["Facebook", "Twitter"]
+    "SHARE_ON":["Facebook", "Twitter"],
 
     # In case you use 'Facebook', you need the following two settings:
     "FACEBOOK_ACCESS_TOKEN": "xxxxxxxxxx", # Replace it with your facebook access token
