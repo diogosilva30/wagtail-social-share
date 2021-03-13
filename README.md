@@ -1,4 +1,4 @@
-# WAGTAIL-SOCIAL-SHARE
+# wagtail-social-share
 
 Auto-share Wagtail Pages on Social Medias.
 
