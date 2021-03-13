@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wagtail-social-share",
-    version="0.0.6",
+    version="0.0.8",
     author="Diogo Silva",
     author_email="diogosilv30@gmail.com",
     description="Auto-share Wagtail Pages on Social Medias",
