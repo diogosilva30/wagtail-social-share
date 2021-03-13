@@ -21,6 +21,7 @@ pip install -r requirements.txt
 # How to use it?
 
 This package is designed to be easily integrable and flexible! :fire:
+
 Here's how you can get started in a few simple steps:
 
 1. Add `wagtail_social_share` to your `INSTALLED_APPS` inside Django settings:
@@ -74,9 +75,9 @@ WAGTAIL_SOCIAL_SHARE={
 
 That's all the basic configuration needed!
 
-Extra details:
+## Extra details:
 
-## Customizing the share URL
+### Customizing the share URL
 
 `wagtail_social_share` provides you the ability to customize the URL that will be shared.
 This is useful for example if you are using a **headless Wagtail**, therefore you don't know
@@ -107,7 +108,7 @@ class BlogPostPage(SocialMediaSharablePageMixin, Page):
         return "https://myawesomeblog.com/posts/" + self.slug
 ```
 
-## Exposing the share URL to the Wagtail API
+### Exposing the share URL to the Wagtail API
 
 `wagtail_social_share` provides you the ability to easily expose the `share_url` property,
 to the Wagtail API.
