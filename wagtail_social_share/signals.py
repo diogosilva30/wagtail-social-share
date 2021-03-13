@@ -9,7 +9,7 @@ from .sharer import share_page
 from .settings import get_setting
 
 # Let everyone know when a new page is published
-def simple_share_signal(sender, **kwargs):
+def share_signal(sender, **kwargs):
 
     # First check if app is in debug mode
     # and if we should perform sharing during
