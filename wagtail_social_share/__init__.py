@@ -1,1 +1,1 @@
-default_app_config = "wagtail_page_sharer.apps.WagtailPageSharerConfig"
+default_app_config = "wagtail_social_share.apps.WagtailSocialShareConfig"
