@@ -2,6 +2,11 @@
 
 Auto-share Wagtail Pages on Social Medias.
 
+## Supported Social Medias
+
+- Facebook
+- Twitter
+
 # Installation :package:
 
 From PyPi repository:
@@ -110,7 +115,7 @@ class BlogPostPage(SocialMediaSharablePageMixin, Page):
 
 ### Exposing the share URL to the Wagtail API
 
-`wagtail_social_share` provides you the ability to easily expose the `share_url` property,
+`wagtail_social_share` provides you the ability to easily expose the `share_url` property
 to the Wagtail API.
 In case you are not familiar with the Wagtail API, please refeer to their [documentation](https://docs.wagtail.io/en/v2.12.3/advanced_topics/api/index.html).
 
@@ -132,3 +137,16 @@ class BlogPostPage(SocialMediaSharablePageMixin, Page):
         # ... Define your own API Fields
     ] + SocialMediaSharablePageMixin.api_fields
 ```
+
+## Contributing
+
+All pull requests are welcome! In which ways you can provide your awesome contribution?
+
+Here's some ideas:
+
+- Adding new social medias;
+- Translating the messages (originally written in Portuguese);
+- Providing new features;
+- Refactor existing code;
+- Writing documentation.
+  For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
