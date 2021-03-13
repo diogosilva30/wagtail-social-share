@@ -19,7 +19,8 @@ __all__ = [
 
 class SocialMediaStrategy(ABC):
     """
-    Abstract SocialMediaAdapter
+    Abstract Social Media Strategy.
+    Use derivated classes instead.
     """
 
     @abstractmethod
@@ -40,9 +41,7 @@ class FacebookStrategy(SocialMediaStrategy):
         """
         Instantiate the Facebook Graph API
         """
-        self.api = facebook.GraphAPI(
-            access_token=get_setting("FACEBOOK_ACCESS_TOKEN")
-        )
+        self.api = facebook.GraphAPI(access_token=get_setting("FACEBOOK_ACCESS_TOKEN"))
 
     def share(self, post_text: str, post_link: str):
         """
