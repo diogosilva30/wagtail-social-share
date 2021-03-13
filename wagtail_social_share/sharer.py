@@ -1,3 +1,7 @@
+"""
+Module containing the methods that
+perform the sharing, using the Social Media Strategies.
+"""
 from django.utils import timezone
 
 from .settings import get_setting
@@ -15,9 +19,7 @@ def share_page(page):
     social_medias = get_setting("SHARE_ON")
 
     # Append 'Strategy' to the name of each social media
-    social_medias = [
-        social_media + "Strategy" for social_media in social_medias
-    ]
+    social_medias = [social_media + "Strategy" for social_media in social_medias]
 
     # Transform each class string into a actual
     # class ("Foo" --> "<class '__main__.Foo'>")

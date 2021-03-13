@@ -1,4 +1,4 @@
-from wagtail_page_sharer.mixins import SocialMediaSharablePageMixin
+from wagtail_social_share.mixins import SocialMediaSharablePageMixin
 
 from django.conf import settings
 
@@ -39,4 +39,4 @@ def share_signal(sender, **kwargs):
 
 
 # Register a receiver
-page_published.connect(simple_share_signal)
+page_published.connect(share_signal)

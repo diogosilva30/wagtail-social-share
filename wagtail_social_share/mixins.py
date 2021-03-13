@@ -1,5 +1,5 @@
 """
-Contains the Mixins that Wagtail Page models can inherit
+Contains the Mixins that Wagtail Page models can inherit.
 """
 from django.db import models
 from django.utils.translation import gettext_lazy as _
@@ -17,9 +17,7 @@ class SocialMediaSharablePageMixin(models.Model):
     """
 
     # Indicates if page was already shared
-    was_shared = models.BooleanField(
-        verbose_name=_("Partilhado"), default=False
-    )
+    was_shared = models.BooleanField(verbose_name=_("Partilhado"), default=False)
     # The time it was shared
     shared_at = models.DateTimeField(
         verbose_name=_("Partilhado a"), blank=True, null=True
