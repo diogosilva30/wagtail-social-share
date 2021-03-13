@@ -1,8 +1,8 @@
 from django.apps import AppConfig
 
 
-class WagtailPageSharerConfig(AppConfig):
-    name = "wagtail_page_sharer"
+class WagtailSocialShareConfig(AppConfig):
+    name = "wagtail_social_share"
 
     def ready(self):
-        import wagtail_page_sharer.signals
+        import wagtail_social_share.signals

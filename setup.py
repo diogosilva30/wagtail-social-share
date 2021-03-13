@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="WAGTAIL-PAGE-SHARER",
+    name="wagtail-social-share",
     version="0.0.6",
     author="Diogo Silva",
     author_email="diogosilv30@gmail.com",
@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
-    url="https://github.com/spamz23/WAGTAIL-PAGE-SHARER",
+    url="https://github.com/spamz23/wagtail-social-share",
     install_requires=open("requirements.txt").readlines(),
     include_package_data=True,
     packages=setuptools.find_packages(),

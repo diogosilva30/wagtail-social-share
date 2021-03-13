@@ -1,12 +1,12 @@
 """
-Imports `PAGE_SHARER` settings from Django settings
+Imports `WAGTAIL_SOCIAL_SHARE` settings from Django settings
 """
 from django.conf import settings as django_settings
 
 from .exceptions import MissingSetting
 
 # Get settings
-settings = getattr(django_settings, "PAGE_SHARER", {})
+settings = getattr(django_settings, "WAGTAIL_SOCIAL_SHARE", {})
 
 
 def get_setting(name: str, required: bool = True):
