@@ -106,7 +106,7 @@ class BlogPostPage(SocialMediaSharablePageMixin, Page):
         In this example we want to share the `title` of a page,
         instead of the `search_description`.
         """
-        return page.title
+        return self.title
 ```
 
 
