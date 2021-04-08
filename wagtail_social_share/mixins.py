@@ -24,6 +24,18 @@ class SocialMediaSharablePageMixin(models.Model):
     )
 
     @property
+    def share_content(self):
+        """
+        The content that will be shared on a social media.
+
+        Defaults to:
+            `self.search_description`
+
+        Can be overriden to customize what gets shared.
+        """
+        return self.search_description
+
+    @property
     def share_url(self):
         """
         The URL that will be shared. Defaults to Wagtail's Page
@@ -46,5 +58,5 @@ class SocialMediaSharablePageMixin(models.Model):
         APIField("share_url"),
     ]
 
-    class Meta:
+    class Meta:  # noqa
         abstract = True

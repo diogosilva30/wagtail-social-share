@@ -30,7 +30,7 @@ def share_page(page):
         # Instantiate strategy, and
         # execute it
         strategy().share(
-            post_text=page.title,
+            post_text=page.share_content,
             post_link=page.share_url,
         )
     # Save that page was shared already
