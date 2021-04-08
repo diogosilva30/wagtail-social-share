@@ -82,6 +82,35 @@ That's all the basic configuration needed!
 
 ## Extra details:
 
+### Customizing the shared content
+
+`wagtail_social_share` provides you the ability to customize the content that will be shared.
+You just need to override the property `share_content` inside your Wagtail Page, like so:
+```python
+
+from wagtail.core.models import Page
+
+from wagtail_social_share.mixins import SocialMediaSharablePageMixin
+
+class BlogPostPage(SocialMediaSharablePageMixin, Page):
+    """
+    `SocialMediaSharablePageMixin` uses a property called `share_content`,
+    that will by default, return the `search_description` of a Wagtail Page.
+    To provide a custom content to share for a page, you can simply override this property.
+    """
+
+    @property
+    def share_content(self):
+        """
+        Provide your custom logic for the content.
+        In this example we want to share the `title` of a page,
+        instead of the `search_description`.
+        """
+        # Build the URL with the slug
+        return page.title
+```
+
+
 ### Customizing the share URL
 
 `wagtail_social_share` provides you the ability to customize the URL that will be shared.
